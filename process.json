@@ -1,0 +1,16 @@
+{
+  "apps" : [{
+    "name"       : "app-duy",
+    "script"     : "server.js",
+    "exec_interpreter": "bash",
+    "exec_mode"  : "fork_mode",
+    "env": {
+        "NODE_ENV": "development",
+        "PORT" : 3000,
+        "DB_HOST": "localhost",
+        "DB_NAME": "antuongshop",
+        "DB_USER": "root",
+        "DB_PASS": ""
+      }
+  }]
+}

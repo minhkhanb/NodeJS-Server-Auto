@@ -1,0 +1,22 @@
+{
+  "apps": [
+    {
+      "script": "index.js",
+      "name": "app-node",
+      "instances": "5",// chạy 5 tiến trình multiple thread
+      "autorestart":true,
+      "error_file": "logs/log-error.log",
+      "out_file": "logs/log-out.log",
+      "log_date_format": "YYYY-MM-DD HH:mm Z",
+      "merge_logs": true,
+      "env": {
+        "NODE_ENV": "development",
+        "PORT" : 3000,
+        "DB_HOST": "localhost",
+        "DB_NAME": "antuongshop",
+        "DB_USER": "root",
+        "DB_PASS": ""
+      }
+    }
+  ]
+}
